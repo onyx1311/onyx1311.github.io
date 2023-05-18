@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Регистрация поставщика</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="contant-form">
+            <form action="register_supplier.php" method="post">
+                <h2>Регистрация поставщика</h2>
+
+                <label for="company-name">Название компании:</label>
+                <input type="text" id="company-name" name="company-name" required>
+
+                <label for="offered-products">Предлагаемая продукция:</label>
+                <input type="text" id="offered-products" name="offered-products">
+
+                <label for="company-type ">Форма собственности:</label>
+                <select id="company-type " name="company-type ">
+                    <option value="LLC ">Юридическое лицо</option>
+                    <option value="JSC ">Самозанятый</option>
+                    <option value="Sole proprietor ">ИП</option>
+                </select>
+
+                <label for="info-company ">Краткая информация об организации:</label>
+                <input type="text" id="info-company" name="info-company" required>
+
+                <label for="contact-name ">Контактное лицо:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <label for="contact-email ">E-mail:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="contact-phone ">Телефон:</label>
+                <input type="text" id="contact-phone" name="contact-phone" required>
+
+                <label for="company-city ">Город:</label>
+                <input type="text" id="company-city" name="company-city" required>
+
+                <label for="company-address ">Адрес:</label>
+                <input type="text" id="company-address" name="company-address" required>
+
+                <label for="company-website ">Сайт компании:</label>
+                <input type="text" id="company-website" name="company-website" required>
+
+                <label for="logo-image ">Логотип компании:</label>
+                <input type="file" id="product-image" name="product-image">
+
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
